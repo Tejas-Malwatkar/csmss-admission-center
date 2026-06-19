@@ -6,115 +6,191 @@
 <title>CSMSS Admission Facilitation Centers</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
 font-family:Arial,sans-serif;
-margin:0;
-background:#f5f7fb;
+background:#f4f7fb;
 color:#222;
 }
 
 .header{
-background:#002b5c;
+background:linear-gradient(135deg,#002b5c,#004080);
 color:white;
-padding:20px;
 text-align:center;
+padding:40px 20px;
+}
+
+.logo{
+width:120px;
+margin-bottom:15px;
 }
 
 .header h1{
-margin:0;
-font-size:40px;
+font-size:38px;
+margin-bottom:10px;
 }
 
 .header h2{
-margin:10px 0;
 font-size:26px;
 color:#ffd700;
+margin-bottom:10px;
 }
 
-.section{
-padding:20px;
+.header p{
+font-size:16px;
+}
+
+.container{
 max-width:1200px;
 margin:auto;
+padding:20px;
 }
 
 .card{
 background:white;
+border-radius:15px;
 padding:20px;
-margin-bottom:15px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-.center-grid{
+.section-title{
+color:#002b5c;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.date-box{
+background:#f8fbff;
+border-left:6px solid #002b5c;
+padding:15px;
+margin-bottom:12px;
+border-radius:10px;
+font-size:18px;
+}
+
+.services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:15px;
+gap:12px;
+}
+
+.service{
+background:#f8fbff;
+padding:12px;
+border-radius:10px;
+font-size:17px;
+}
+
+.centers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
 
 .center-card{
 background:white;
 padding:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+border-radius:15px;
 text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.badge{
+display:inline-block;
+background:#ffd700;
+color:#002b5c;
+padding:8px 15px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.center-card h3{
+font-size:24px;
+margin-bottom:10px;
+color:#002b5c;
+}
+
+.center-card p{
+margin-bottom:10px;
+font-size:17px;
 }
 
 .btn{
 display:inline-block;
+padding:12px 18px;
 margin:5px;
-padding:10px 15px;
-background:#002b5c;
-color:white;
+border-radius:8px;
 text-decoration:none;
-border-radius:8px;
+font-weight:bold;
+color:white;
 }
 
-.btn-call{
+.location{
+background:#002b5c;
+}
+
+.call{
 background:#0b8f3d;
-}
-
-.date-box{
-background:white;
-padding:15px;
-border-left:6px solid #002b5c;
-margin-bottom:10px;
-border-radius:8px;
 }
 
 .footer{
 background:#002b5c;
 color:white;
-padding:20px;
 text-align:center;
+padding:25px;
 margin-top:30px;
 }
 
-.qr{
-height:250px;
-border:3px dashed #999;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:22px;
-font-weight:bold;
-background:white;
-border-radius:12px;
+@media(max-width:768px){
+
+.header h1{
+font-size:28px;
 }
+
+.header h2{
+font-size:22px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.center-card h3{
+font-size:20px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="header">
+
+<img src="logo.jpg" class="logo">
+
 <h1>CSMSS COLLEGE OF POLYTECHNIC</h1>
-<h2>Admission Facilitation Centers 2026-27</h2>
+
+<h2>📍 Admission Facilitation Centers Available</h2>
+
 <p>Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar</p>
+
 </div>
 
-<div class="section">
+<div class="container">
 
 <div class="card">
-<h2>📢 Important Dates</h2>
+
+<h2 class="section-title">📢 Important Dates</h2>
 
 <div class="date-box">
 <b>Provisional Merit List</b><br>
@@ -134,85 +210,107 @@ border-radius:12px;
 </div>
 
 <div class="card">
-<h2>🎓 Services Available</h2>
 
-✅ Physical FC (Facilitation Centre)<br><br>
+<h2 class="section-title">🎓 Services Available</h2>
 
-✅ CAP Registration Guidance<br><br>
+<div class="services">
 
-✅ Online Application Filling<br><br>
+<div class="service">✅ Physical FC Available</div>
 
-✅ Document Verification Assistance<br><br>
+<div class="service">✅ CAP Registration Guidance</div>
 
-✅ Choice Filling Guidance<br><br>
+<div class="service">✅ Online Application Filling</div>
 
-✅ Merit List Guidance<br><br>
+<div class="service">✅ Document Verification Assistance</div>
 
-✅ Admission Process Guidance<br><br>
+<div class="service">✅ Choice Filling Guidance</div>
 
-✅ Scholarship Guidance<br><br>
+<div class="service">✅ Merit List Guidance</div>
 
-✅ Branch Selection Guidance
+<div class="service">✅ Admission Process Guidance</div>
+
+<div class="service">✅ Scholarship Guidance</div>
+
+<div class="service">✅ Branch Selection Guidance</div>
 
 </div>
 
-<h2>📍 Admission Facilitation Centers</h2>
+</div>
 
-<div class="center-grid">
+<h2 class="section-title">📍 Admission Facilitation Centers</h2>
+
+<div class="centers">
 
 <div class="center-card">
+
+<div class="badge">
+Admission Facilitation Center
+</div>
+
 <h3>1️⃣ IT Solution, Bidkin</h3>
+
 <p>Bus Stand Samor, Bidkin</p>
 
-<a class="btn" href="https://maps.app.goo.gl/zmZsm5P34dETbHpg8">
-Open Location
+<p><b>📞 7447746565</b></p>
+
+<a class="btn location"
+href="https://maps.app.goo.gl/zmZsm5P34dETbHpg8">
+📍 Open Location
 </a>
 
-<a class="btn btn-call" href="tel:7447746565">
-Call
+<a class="btn call"
+href="tel:7447746565">
+📞 Call Now
 </a>
 
-<p><b>7447746565</b></p>
 </div>
 
 <div class="center-card">
+
+<div class="badge">
+Admission Facilitation Center
+</div>
+
 <h3>2️⃣ Pandharpur Center, Waluj</h3>
+
 <p>Chotu Vadapav Jawal</p>
 
-<a class="btn" href="https://maps.google.com/?q=19.840393,75.240982">
-Open Location
+<p><b>📞 8308835899</b></p>
+
+<a class="btn location"
+href="https://maps.google.com/?q=19.840393,75.240982">
+📍 Open Location
 </a>
 
-<a class="btn btn-call" href="tel:8308835899">
-Call
+<a class="btn call"
+href="tel:8308835899">
+📞 Call Now
 </a>
 
-<p><b>8308835899</b></p>
 </div>
 
 <div class="center-card">
+
+<div class="badge">
+Admission Facilitation Center
+</div>
+
 <h3>3️⃣ Karmad Facilitation Center</h3>
 
-<a class="btn" href="https://maps.app.goo.gl/mqkY6H4rR6mrZLwR8">
-Open Location
+<p>Karmad</p>
+
+<p><b>📞 8767991210</b></p>
+
+<a class="btn location"
+href="https://maps.app.goo.gl/mqkY6H4rR6mrZLwR8">
+📍 Open Location
 </a>
 
-<a class="btn btn-call" href="tel:8767991210">
-Call
+<a class="btn call"
+href="tel:8767991210">
+📞 Call Now
 </a>
 
-<p><b>8767991210</b></p>
-</div>
-
-</div>
-
-<br>
-
-<div class="card">
-<h2>📱 QR Code Area</h2>
-
-<div class="qr">
-Place QR Code Here
 </div>
 
 </div>
@@ -220,8 +318,17 @@ Place QR Code Here
 </div>
 
 <div class="footer">
-<h3>Secretary</h3>
+
+<h3>CSMSS College of Polytechnic</h3>
+
+<p>Chhatrapati Sambhajinagar</p>
+
+<br>
+
+<p><b>Secretary</b></p>
+
 <p>Chhatrapati Shahu Maharaj Shikshan Sanstha</p>
+
 </div>
 
 </body>
